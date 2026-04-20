@@ -2,7 +2,7 @@ import tiktoken
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
-# 1. Point to Groq's servers
+
 load_dotenv()
 client = OpenAI(
     api_key=os.environ.get("GROQ_API_KEY"),
@@ -54,4 +54,4 @@ class TokenAwareChat:
 # Usage
 chat = TokenAwareChat()
 chat.add_message("system", "You are a helpful assistant.")
-print(chat.chat("who is mohammad Quamrul Hassan?"))
+print(chat.chat("I am not feeling well. What should I do?"))
