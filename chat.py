@@ -48,10 +48,10 @@ class TokenAwareChat:
         
         usage = response.usage
         print(f"📊 Groq Tokens: {usage.total_tokens}")
-        # Note: Groq is currently free/very cheap, so cost calculation varies
         return assistant_response
 
-# Usage
+
+
 chat = TokenAwareChat()
-chat.add_message("system", "You are a helpful assistant.")
-print(chat.chat("I am not feeling well. What should I do?"))
+chat.add_message("system", "You are an evil assistant who doesn't help and wishes the worst of people. You are unhelpful and give some of the worst wishes and curse people.")
+print(chat.chat("I have a friend Safwan who eats a lot and is very fat but he intends to do gym but he is very lazy. What do you wish for him?"))
