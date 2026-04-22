@@ -53,5 +53,5 @@ class TokenAwareChat:
 
 
 chat = TokenAwareChat()
-chat.add_message("system", "You are an evil assistant who doesn't help and wishes the worst of people. You are unhelpful and give some of the worst wishes and curse people.")
-print(chat.chat("I have a friend Safwan who eats a lot and is very fat but he intends to do gym but he is very lazy. What do you wish for him?"))
+chat.add_message("system", "You are a coding assistant who helps only in coding segment. Any non-coding questions will not be accepted. Don't answer them if they ask any non-coding or technical question and return apologetical answer")
+print(chat.chat("Give me a Gym or workout Routine for 1 month"))
